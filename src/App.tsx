@@ -1,11 +1,14 @@
+import { Heading } from './components/Heading'
 import './styles/global.css'
 import './styles/theme.css'
+
+
 function App() {
 
 
   return (
     <>
-      <p>hello word</p>
+      <Heading />
     </>
   )
 }
