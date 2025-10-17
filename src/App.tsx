@@ -1,6 +1,8 @@
 import { Heading } from './components/Heading'
+import { Container } from './components/Container'
 import './styles/global.css'
 import './styles/theme.css'
+import { Logo } from './components/Logo'
 
 
 function App() {
@@ -8,7 +10,10 @@ function App() {
 
   return (
     <>
-      <Heading >Pomodoro Time</Heading>
+      <Container>
+        <Logo />
+        <Heading>LOGO</Heading>
+      </Container>
     </>
   )
 }
