@@ -51,7 +51,7 @@ export function MainForm() {
     function handleInterruptTask() {
         showMessage.dismiss();
         showMessage.error('Tarefa interrompida!');
-        // dispatch({ type: TaskActionTypes.INTERRUPT_TASK });
+        dispatch({ type: TaskActionTypes.INTERRUPT_TASK });
     }
 
     return (
