@@ -1,22 +1,13 @@
-// import { Heading } from './components/Heading'
-// import { Container } from './components/Container'
-import './styles/global.css'
-import './styles/theme.css'
-// import { Logo } from './components/Logo'
-// import { Menu } from './components/Menu'
-// import { CountDown } from './components/CountDown'
-// import { DefaultInput } from './components/DefaultInput'
-// import { Cycles } from './components/Cycles'
-// import { DefaultButton } from './components/Button';
-// import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
-// import { Footer } from './components/Footer'
-import { Home } from './pages/Home'
+import { Home } from './pages/Home';
 
+import './styles/theme.css';
+import './styles/global.css';
+import { TaskContextProvider } from './contexts/TaskContext/TaskContextProvider';
 
-function App() {
-
-
-  return <Home />
+export function App() {
+  return (
+    <TaskContextProvider>
+      <Home />
+    </TaskContextProvider>
+  );
 }
-
-export default App
