@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
-import { AboutPomodoro } from '../pages/AboutPomodoro';
-import { NotFound } from '../pages/NotFound';
-import { Home } from '../pages/Home';
+import { AboutPomodoro } from '../../pages/AboutPomodoro';
+import { NotFound } from '../../pages/NotFound';
+import { Home } from '../../pages/Home';
 import { useEffect } from 'react';
-import { History } from '../pages/History';
-import { Settings } from '../pages/Settings';
+import { History } from '../../pages/History';
+import { Settings } from '../../pages/Settings';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
